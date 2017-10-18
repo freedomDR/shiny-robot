@@ -1,6 +1,6 @@
 # 数字图像处理相关知识
-- 基本灰度变换
-  - [图像反转](src/GrayScaleTransformation/)
+- [基本灰度变换](src/GrayScaleTransformation/)
+  - 图像反转
   - 对数变换
   - 幂律变换
   - 分段线性变换
