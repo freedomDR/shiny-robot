@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import cv2
 
-img = cv2.imread('ImageMaterial/DIP3/Fig0310(b)(washed_out_pollen_image).tif',cv2.IMREAD_COLOR)
+img = cv2.imread('../../ImageMaterial/DIP3/Fig0310(b)(washed_out_pollen_image).tif',cv2.IMREAD_COLOR)
 
 plt.figure(1)
 plt.subplot(1,4,1)
@@ -15,7 +15,7 @@ plt.yticks([])
 plt.imshow(img,cmap='Greys_r')
 plt.title('original image')
 
-img = cv2.imread('ImageMaterial/DIP3/Fig0310(b)(washed_out_pollen_image).tif',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../../ImageMaterial/DIP3/Fig0310(b)(washed_out_pollen_image).tif',cv2.IMREAD_GRAYSCALE)
 middle = img.shape
 
 # s = (s2-s1)/(r2-r1) * r

@@ -20,7 +20,7 @@ plt.gca().set_aspect(1)
 
 plt.figure(2)
 
-img = cv2.imread('ImageMaterial/DIP3/Fig0312(a)(kidney).tif',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../../ImageMaterial/DIP3/Fig0312(a)(kidney).tif',cv2.IMREAD_GRAYSCALE)
 plt.subplot(1,3,1)
 plt.imshow(img,cmap='Greys_r')
 

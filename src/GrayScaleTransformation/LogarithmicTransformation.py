@@ -3,7 +3,7 @@ import cv2
 import math
 import numpy as np
 from matplotlib import pyplot as plt
-img = cv2.imread('ImageMaterial/DIP3/Fig0305(a)(DFT_no_log).tif',cv2.IMREAD_COLOR)
+img = cv2.imread('../../ImageMaterial/DIP3/Fig0305(a)(DFT_no_log).tif',cv2.IMREAD_COLOR)
 
 plt.subplot(2,2,1)
 plt.imshow(img)

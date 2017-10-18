@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import cv2
 import math
 
-img = cv2.imread('ImageMaterial/DIP3/Fig0307(a)(intensity_ramp).tif',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../../ImageMaterial/DIP3/Fig0307(a)(intensity_ramp).tif',cv2.IMREAD_GRAYSCALE)
 #print cv2.IMREAD_GRAYSCALE,cv2.IMREAD_COLOR,cv2.IMREAD_ANYCOLOR
 plt.subplot(1,2,1)
 plt.imshow(img,cmap='Greys_r')
@@ -28,7 +28,7 @@ plt.title('gamma transformation image')
 
 plt.show()
 
-imgTwo = cv2.imread('ImageMaterial/DIP3/Fig0308(a)(fractured_spine).tif',cv2.IMREAD_GRAYSCALE)
+imgTwo = cv2.imread('../../ImageMaterial/DIP3/Fig0308(a)(fractured_spine).tif',cv2.IMREAD_GRAYSCALE)
 
 plt.subplot(2,2,1)
 plt.imshow(imgTwo,cmap='Greys_r')
@@ -64,7 +64,7 @@ plt.title('k = 0.3')
 
 plt.show()
 
-imgThree = cv2.imread('ImageMaterial/DIP3/Fig0309(a)(washed_out_aerial_image).tif',cv2.IMREAD_GRAYSCALE)
+imgThree = cv2.imread('../../ImageMaterial/DIP3/Fig0309(a)(washed_out_aerial_image).tif',cv2.IMREAD_GRAYSCALE)
 
 plt.subplot(2,2,1)
 plt.imshow(imgThree,cmap='Greys_r')
