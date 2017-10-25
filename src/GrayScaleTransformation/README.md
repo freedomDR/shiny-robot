@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM"></script>
 # 基本灰度变换
 ### 图像反转
 >这种变换特别适用于增强嵌入在一幅图像的暗区域中的白色或灰色细节
