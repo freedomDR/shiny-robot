@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # 基本灰度变换
 ### 图像反转
 >这种变换特别适用于增强嵌入在一幅图像的暗区域中的白色或灰色细节
@@ -9,7 +10,7 @@
 
 ### 幂律变换
 >也叫伽马变换，常用于计算机屏幕校正，也用来进行对比度增强
->**`s = cr(gama)`**
+>**`$$s = cr^{\gamma}$$`**
 
 ### 分段线性变换
 - 对比度拉伸
