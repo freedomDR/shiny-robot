@@ -9,7 +9,7 @@
 
 ### 幂律变换
 >也叫伽马变换，常用于计算机屏幕校正，也用来进行对比度增强<br/>
->![](https://latex.codecogs.com/svg.latex?\inline&space;s=cr^{\gamma})
+>![](https://latex.codecogs.com/svg.latex?s=cr^{\gamma})
 
 ### 分段线性变换
 - 对比度拉伸
