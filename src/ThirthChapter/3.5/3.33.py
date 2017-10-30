@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 import matplotlib.pyplot as plt
+import numpy as np
+
 img = cv.imread('../../../ImageMaterial/DIP3/Fig0333(a)(test_pattern_blurring_orig).tif', cv.IMREAD_COLOR)
-print img.shape
+print type(img)
 img = cv.cvtColor(img, code=cv.COLOR_BGR2GRAY)
 print img.shape
 plt.subplot(2, 3, 1)
