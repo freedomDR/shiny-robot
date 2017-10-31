@@ -48,37 +48,36 @@ def generate(img, x, y):
         img[x + 1][y + 1] = 255, 255, 255, 255, 255, 255, 255, 255, 255
 
 
-#色调处理函数
-def halftoning(img,position):
+# 色调处理函数
+def halftoning(img, position):
     resImg = np.zeros([img.shape[0] * 3, img.shape[1] * 3])
     for x in range(1, resImg.shape[0], 3):
         for y in range(1, resImg.shape[1], 3):
-            resImg[x][y] = img[(x-1)//3][(y-1)//3]
+            resImg[x][y] = img[(x - 1) // 3][(y - 1) // 3]
             generate(resImg, x, y)
-    custom_show(resImg,position)
+    custom_show(resImg, position)
 
 
 def custom_show(img_show, position):
-    plt.subplot(position[0],position[1],position[2])
+    plt.subplot(position[0], position[1], position[2])
     plt.imshow(img_show, cmap='Greys_r')
     plt.xticks([]), plt.yticks([])
     plt.tight_layout()
 
 
-#身成图像
-
-img = [[y for y in range(256)]for x in range(256)]
-img = np.array(img)
-plt.figure(1)
-halftoning(img,[1,1,1])
-plt.figure(2)
-img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(a)(face).tif',cv.IMREAD_GRAYSCALE)
-halftoning(img,[1,1,1])
-plt.figure(3)
-img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(b)(cameraman).tif',cv.IMREAD_GRAYSCALE)
-halftoning(img,[1,1,1])
-plt.figure(4)
-img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(c)(crowd).tif',cv.IMREAD_GRAYSCALE)
-halftoning(img,[1,1,1])
-plt.show()
-
+if __name__ == '__main__':
+    # 生成图像
+    img = [[y for y in range(256)] for x in range(256)]
+    img = np.array(img)
+    plt.figure(1)
+    halftoning(img, [1, 1, 1])
+    plt.figure(2)
+    img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(a)(face).tif', cv.IMREAD_GRAYSCALE)
+    halftoning(img, [1, 1, 1])
+    plt.figure(3)
+    img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(b)(cameraman).tif', cv.IMREAD_GRAYSCALE)
+    halftoning(img, [1, 1, 1])
+    plt.figure(4)
+    img = cv.imread('../../ImageMaterial/DIP3E_Original_Images_CH02/Fig0222(c)(crowd).tif', cv.IMREAD_GRAYSCALE)
+    halftoning(img, [1, 1, 1])
+    plt.show()
