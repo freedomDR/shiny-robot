@@ -15,7 +15,7 @@ def zoom(img, number):
     #        for i in range(number):
     #            for j in range(number):
     #                img_res[x*number+i][y*number+j] = img[x][y]
-    img_res = cv.resize(img, (img.shape[1] * number, img.shape[0] * number), cv.INTER_NEAREST)
+    img_res = cv.resize(img, (img.shape[1] * number, img.shape[0] * number), cv.INTER_LINEAR)
     return img_res
     pass
 
@@ -28,7 +28,7 @@ def shrink(img, number):
     #        for i in range(number):
     #            for j in range(number):
     #                img_res[x][y] += img[x*number+i][y*number+j]/(number*2)
-    img_res = cv.resize(img, (img.shape[1]//number,img.shape[0]//number),interpolation=cv.INTER_NEAREST)
+    img_res = cv.resize(img, (img.shape[1]//number,img.shape[0]//number),interpolation=cv.INTER_LINEAR)
     return img_res
     pass
 
