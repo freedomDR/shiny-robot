@@ -23,6 +23,7 @@ def filter(imgM, myFilter,num,c,flag):
                 img[i-2][j-2] = res
     return np.copy(img)
 img = cv.imread('../../../ImageMaterial/DIP3/Fig0338(a)(blurry_moon).tif',cv.IMREAD_GRAYSCALE)
+#img = cv.imread('../../../ImageMaterial/DIP3/Fig0342(a)(contact_lens_original).tif',cv.IMREAD_GRAYSCALE)
 deal(img ,1)
 xLen, yLen = map(int, list(img.shape))
 imgT = np.zeros((xLen+4,yLen+4))
