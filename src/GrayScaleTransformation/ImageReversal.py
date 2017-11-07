@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+
+
 img = cv2.imread('../../ImageMaterial/DIP3/Fig0304(a)(breast_digital_Xray).tif',cv2.IMREAD_COLOR)
-print img
+print(img)
 middle = img.shape
 plt.subplot(1,2,1)
 plt.imshow(img)
